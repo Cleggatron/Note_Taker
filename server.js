@@ -3,6 +3,10 @@ const PORT = process.env.PORT || 3001;
 const path = require("path");
 
 const app = express();
+//Our route forwardin for our api post/get requests
+const apiRouter = require("./routes/api.js");
+
+app.use("/api/notes", apiRouter);
 
 //return our notes file
 app.get("/notes", (req, res) =>
