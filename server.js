@@ -1,11 +1,18 @@
 const express = require("express");
-const PORT = process.env.PORT || 3001;
 const path = require("path");
-
-const app = express();
-//Our route forwarding for our api post/get requests
 const apiRouter = require("./routes/api.js");
+
+const PORT = process.env.PORT || 3001;
+const app = express();
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
+
+//Our route forwarding for our api post/get requests
+
 app.use("/api/notes", apiRouter);
+
 
 //return our notes file
 app.get("/notes", (req, res) =>
