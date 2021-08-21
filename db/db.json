@@ -1,6 +1,17 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "id": "c35139dd-e409-48e6-a65c-0ad14a55beb6",
+        "title": "Test Note",
+        "text": "Test Note"
+    },
+    {
+        "id": "76a66b95-81f4-4b48-b5c9-db8403eadedc",
+        "title": "The Doors",
+        "text": "Are a fantastic band"
+    },
+    {
+        "id": "5642878e-fcce-4714-b272-730ce935c369",
+        "title": "Dire Straits",
+        "text": "Are another kick ass band."
     }
 ]
